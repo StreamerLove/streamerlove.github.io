@@ -6,6 +6,9 @@
 var spotlight = 1
 var member = "flowerkidnena"
 
+
+if (spotlight === 1) {
+   document.getElementById('spotlight').innerHTML += ' <iframe src="http://player.twitch.tv/?channel=' + member + '&autoplay=true" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
 Twitch.api({method: 'channels/' + member },  function(error, channel) {
   document.getElementById('info').innerHTML +=  channel.display_name + ' currently playing: ' + channel.game + '<br>' + channel.status;
     if (channel.logo === null) {
@@ -14,9 +17,6 @@ Twitch.api({method: 'channels/' + member },  function(error, channel) {
     document.getElementById('picture').innerHTML += '<img src="' + channel.logo + '" height="150" width="150" class="img-responsive img-circle"> <br>';
   }
 });
-if (spotlight === 1) {
-   document.getElementById('spotlight').innerHTML += ' <iframe src="http://player.twitch.tv/?channel=' + member + '&autoplay=true" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
-
  } else {
   document.getElementById('spotlight').innerHTML += '<h3>No spotlight is currently active.</h3>';
  }
