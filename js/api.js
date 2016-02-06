@@ -8,7 +8,7 @@ var member = "flowerkidnena"
 
 
 if (spotlight === 1) {
-   document.getElementById('spotlight').innerHTML += ' <iframe src="http://player.twitch.tv/?channel=' + member + '&autoplay=true" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
+   document.getElementById('spotlight').innerHTML += ' <iframe src="http://player.twitch.tv/?channel=' + member + '&autoplay=true" frameborder="0" scrolling="no" height="378" width="620"></iframe><br><a href="http://twitch.tv/' + member + '">Check them out on Twitch!</a>';
 Twitch.api({method: 'channels/' + member },  function(error, channel) {
   document.getElementById('info').innerHTML +=  channel.display_name + ' currently playing: ' + channel.game + '<br>' + channel.status;
     if (channel.logo === null) {
