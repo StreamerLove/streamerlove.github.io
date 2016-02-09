@@ -3,8 +3,8 @@
   Twitch.init({clientId: 'mzbri5lzbhbj9fpi0d1ip91hz4lw2b3'}, function(error, status) {
    console.log("Twitch API Loaded");
   });
-var spotlight = 0
-var member = "mylittlepwn1e"
+var spotlight = 1
+var member = "LeahXcim"
 
 
 if (spotlight === 1) {
