@@ -4,7 +4,7 @@
    console.log("Twitch API Loaded");
   });
 var spotlight = 1
-var member = "flowerkidnena"
+var member = "843_gameboy"
 
 
 if (spotlight === 1) {
