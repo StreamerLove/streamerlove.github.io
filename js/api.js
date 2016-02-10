@@ -4,7 +4,7 @@
    console.log("Twitch API Loaded");
   });
 var spotlight = 1
-var member = "LeahXcim"
+var member = "flowerkidnena"
 
 
 if (spotlight === 1) {
