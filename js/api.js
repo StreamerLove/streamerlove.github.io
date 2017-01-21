@@ -3,7 +3,7 @@
   Twitch.init({clientId: 'mzbri5lzbhbj9fpi0d1ip91hz4lw2b3'}, function(error, status) {
    console.log("Twitch API Loaded");
   });
-var spotlight = 1
+var spotlight = 0
 var member = "843_gameboy"
 
 
